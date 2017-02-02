@@ -16,7 +16,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-obsession'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'ctrlpvim/CtrlP.vim'
+Plugin 'vim-scripts/DrawIt'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -69,6 +70,7 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 let g:airline_left_sep=''
 let g:airline_right_sep=''
+set laststatus=2 " Makes airlien load correctly, somehow
 
 let g:jedi#smart_auto_mappings = 0
 
@@ -78,3 +80,5 @@ set viminfo-=<50,s10
 " Only set this inv-var in vim, or else pip explodes
 let $PYTHONPATH = '/cygdrive/e/git/Sky-sniperduel/libs/'
 
+" So fugitives Gdiff is vertical
+set diffopt+=vertical
