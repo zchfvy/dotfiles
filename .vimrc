@@ -16,8 +16,11 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/CtrlP.vim'
 Plugin 'vim-scripts/DrawIt'
+Plugin 'majutsushi/tagbar'
+
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -82,3 +85,10 @@ let $PYTHONPATH = '/cygdrive/e/git/Sky-sniperduel/libs/'
 
 " So fugitives Gdiff is vertical
 set diffopt+=vertical
+
+let g:ctrlp_root_markers = ['Horque_Debug.exe']
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Tagbar
+nmap <C-t> :TagbarToggle<CR>
+let g:tagbar_autofocus = 1
