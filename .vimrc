@@ -23,6 +23,7 @@ Plugin 'tpope/vim-dispatch'
 Plugin 'ctrlpvim/CtrlP.vim'
 Plugin 'vim-scripts/DrawIt'
 Plugin 'majutsushi/tagbar'
+Plugin 'OmniSharp/omnisharp-vim'
 
 
 call vundle#end()            " required
