@@ -96,3 +96,6 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 " Tagbar
 nmap <C-t> :TagbarToggle<CR>
 let g:tagbar_autofocus = 1
+
+" OH MY GOD
+set relativenumber
