@@ -93,6 +93,7 @@ set diffopt+=vertical
 
 let g:ctrlp_root_markers = ['Horque_Debug.exe']
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_custom_ignore = '\v[\/]\.(pyc|meta)$'
 
 " Tagbar
 nmap <C-t> :TagbarToggle<CR>
