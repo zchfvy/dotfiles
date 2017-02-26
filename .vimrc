@@ -24,6 +24,7 @@ Plugin 'ctrlpvim/CtrlP.vim'
 Plugin 'vim-scripts/DrawIt'
 Plugin 'majutsushi/tagbar'
 Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'SirVer/ultisnips'
 
 
 call vundle#end()            " required
