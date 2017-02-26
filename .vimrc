@@ -25,6 +25,8 @@ Plugin 'vim-scripts/DrawIt'
 Plugin 'majutsushi/tagbar'
 Plugin 'OmniSharp/omnisharp-vim'
 Plugin 'SirVer/ultisnips'
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 
 call vundle#end()            " required
@@ -101,3 +103,7 @@ let g:tagbar_autofocus = 1
 
 " OH MY GOD
 set relativenumber
+
+" NERDtree
+nmap <C-n>  :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$', '\.meta$']
