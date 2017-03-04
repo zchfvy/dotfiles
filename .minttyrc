@@ -2,3 +2,4 @@ CursorType=block
 Scrollbar=none
 BellType=-1
 BellFile=tick
+Font=Roboto Mono for Powerline
